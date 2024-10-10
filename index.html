@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="header">
+        <img src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Music-logo.png" alt="abc" class="logo" />
+        <h1>Music Player</h1>
+    </div>
+    <div class="container">
+        <ul class="card-list">
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_141F_myvyke.svg" alt="cover-imgAlbum Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Chaff & Dust</h3>
+                        <p class="album-artist">HYONNA</p>
+                    </div>
+                </button>
+            </li>
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_140E_fo4ed5.svg" alt="cover-imgAlbum Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Believer</h3>
+                        <p class="album-artist">Imagine Dragons</p>
+                    </div>
+                </button>
+            </li>
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_139D_csuf2w.svg" alt="cover-imgAlbum Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Dream On</h3>
+                        <p class="album-artist">ROGER TERRY</p>
+                    </div>
+                </button>
+            </li>
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_134I_xdcgas.svg" alt="cover-imgAlbum Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Shortwave</h3>
+                        <p class="album-artist">RYAN GRIDRY</p>
+                    </div>
+                </button>
+            </li>
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/albumimage-2_srr5ry.png" alt="cover-imgAlbum Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Tie Me Down</h3>
+                        <p class="album-artist">GRYFFIN</p>
+                    </div>
+                </button>
+            </li>
+            <li class="card">
+                <button class="album-btn">
+                    <img class="album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_133H_z0aw3q.svg" alt="Album Cover" />
+                    <div class="text-wrapper">
+                        <h3 class="album-title">Monsters Go Bump</h3>
+                        <p class="album-artist">ERIKA RECINOS</p>
+                    </div>
+                </button>
+            </li>
+        </ul>
+        <div class="music-player">
+            <div class="active-music">
+                <img class="logo active-music-cover album-cover" src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/Group_140E_fo4ed5.svg" alt="currently-playing-active_music" />
+            </div>
+            <div class="details">
+                <h4 class="active-music-title album-title">Believer</h4>
+                <p class="current-artist album-artist" id="current-artist">
+                    Imagine Dragons
+                </p>
+            </div>
+            <audio id="player" class="audio-player" controls autoplay>
+                <source src="https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/static-website/podcast.mp3" type="audio/mpeg" />
+                <p class="error-text">
+                    Your browser does not support the audio element.
+                </p>
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
